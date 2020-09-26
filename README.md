@@ -1,6 +1,6 @@
 ## Welcome to the Agile Alliance
 
-### Tonews
+### Debias
 * Our project aims to solve the difficulty in finding articles with different viewpoints by aggregating daily news articles and displaying their tone to allow users to differentiate articles pertaining to a topic based on their tone.
 
 ### Team Members
@@ -11,7 +11,7 @@
 * [Hengchao Xiang](https://github.com/william-xiang)
 
 ### Documents
-- [Project Proposal](https://app.asana.com/0/1192871833278825/list)
+- [Project Proposal](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/Project%20Proposal.pdf)
 
 ### Useful Links
 - [Asana for project management](https://app.asana.com/0/1192871833278825/list)
