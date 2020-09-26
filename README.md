@@ -1,6 +1,7 @@
 ## Welcome to the Agile Alliance
 
-:heavy_exclamation_mark:Note: Our project repository is currently private and shared by the team members only.
+### Tonews
+* Our project aims to solve the difficulty in finding articles with different viewpoints by aggregating daily news articles and displaying their tone to allow users to differentiate articles pertaining to a topic based on their tone.
 
 ### Team Members
 * [Siddharth Bhardwaj](https://github.com/SidB16)
