@@ -8,7 +8,7 @@
 * [Michael Brog](https://github.com/MichaelBrog)
 * [Ruizhe Liu](http://github.com/viloil)
 * [Arshdeep Saini](https://github.com/omegashin)
-* [Hendchao Xiang](https://github.com/william-xiang)
+* [Hengchao Xiang](https://github.com/william-xiang)
 
 ### Documents
 - [Project Proposal](https://app.asana.com/0/1192871833278825/list)
