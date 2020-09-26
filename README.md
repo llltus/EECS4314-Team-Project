@@ -1,6 +1,4 @@
-## Welcome to {{Project Name}}
-
-{{Project overview when available}}
+## Welcome to the Agile Alliance
 
 :heavy_exclamation_mark:Note: Our project repository is currently private and shared by the team members only.
 
@@ -12,6 +10,7 @@
 * [Hendchao Xiang](https://github.com/william-xiang)
 
 ### Documents
+- [Project Proposal](https://app.asana.com/0/1192871833278825/list)
 
 ### Useful Links
 - [Asana for project management](https://app.asana.com/0/1192871833278825/list)
