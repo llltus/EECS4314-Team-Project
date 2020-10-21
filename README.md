@@ -13,6 +13,8 @@
 ### Documents
 - [Project Proposal](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/Project%20Proposal.pdf)
 - [Project Proposal Slides](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/projectProposalSlides.pdf)
+- [Conceptual Architecture](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/ConceptualArchitecture.pdf)
+- [Conceptual Architecture Slides](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/ConceptualArchitecturePresentation.pdf)
 
 ### Useful Links
 - [Asana for project management](https://app.asana.com/0/1192871833278825/list)
