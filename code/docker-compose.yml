@@ -15,6 +15,6 @@ db:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=pass
     volumes:
-      - .debias_backend/init-db.js:/docker-entrypoint-initdb.d/init-db.js:ro
+      - ./debias_backend/init-db.js:/docker-entrypoint-initdb.d/init-db.js:ro
     ports:
       - 27017:27017
