@@ -1,6 +1,6 @@
-FROM node:14-alpine
+FROM node:alpine
 
-WORKDIR /eecs4314_project_frontend
+WORKDIR /usr/app/frontend
 
 COPY rollup.config.js ./
 COPY package*.json ./
@@ -12,8 +12,8 @@ COPY ./public ./public
 
 RUN npm run-script build
 
-EXPOSE 5000
+# EXPOSE 5000
 
-ENV HOST=0.0.0.0
+# ENV HOST=0.0.0.0
 
-CMD [ "npm", "dev" ]
+CMD [ "npm", "start" ]
