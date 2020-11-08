@@ -545,7 +545,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (94:0) {#each tones as tone}
+    // (90:0) {#each tones as tone}
     function create_each_block_1(ctx) {
     	let input;
     	let input_name_value;
@@ -572,10 +572,10 @@ var app = (function () {
     			input.value = input.__value;
     			attr_dev(input, "id", input_id_value = /*tone*/ ctx[12].name.toLowerCase());
     			/*$$binding_groups*/ ctx[6][0].push(input);
-    			add_location(input, file$1, 94, 2, 2577);
+    			add_location(input, file$1, 90, 2, 2532);
     			set_style(label, "color", /*tone*/ ctx[12].color);
     			attr_dev(label, "for", label_for_value = /*tone*/ ctx[12].name.toLowerCase());
-    			add_location(label, file$1, 101, 2, 2759);
+    			add_location(label, file$1, 97, 2, 2721);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
@@ -608,14 +608,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(94:0) {#each tones as tone}",
+    		source: "(90:0) {#each tones as tone}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (109:0) {:else}
+    // (105:0) {:else}
     function create_else_block(ctx) {
     	let each_1_anchor;
     	let each_value = /*filteredArticles*/ ctx[1];
@@ -676,14 +676,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(109:0) {:else}",
+    		source: "(105:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (107:0) {#if allArticles.length == 0}
+    // (103:0) {#if allArticles.length == 0}
     function create_if_block(ctx) {
     	let p;
 
@@ -692,7 +692,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Empty list";
     			set_style(p, "background", "red");
-    			add_location(p, file$1, 107, 2, 2899);
+    			add_location(p, file$1, 103, 2, 2867);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -707,14 +707,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(107:0) {#if allArticles.length == 0}",
+    		source: "(103:0) {#if allArticles.length == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (110:2) {#each filteredArticles as article}
+    // (106:2) {#each filteredArticles as article}
     function create_each_block(ctx) {
     	let p;
     	let t0_value = /*article*/ ctx[9].title + "";
@@ -747,9 +747,9 @@ var app = (function () {
     			br1 = element("br");
     			t7 = text(" - ");
     			t8 = text(t8_value);
-    			add_location(br0, file$1, 110, 50, 3038);
-    			add_location(br1, file$1, 110, 74, 3062);
-    			add_location(p, file$1, 110, 4, 2992);
+    			add_location(br0, file$1, 106, 50, 3009);
+    			add_location(br1, file$1, 106, 74, 3033);
+    			add_location(p, file$1, 106, 4, 2963);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -780,7 +780,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(110:2) {#each filteredArticles as article}",
+    		source: "(106:2) {#each filteredArticles as article}",
     		ctx
     	});
 
@@ -831,8 +831,8 @@ var app = (function () {
     			t3 = space();
     			if_block.c();
     			if_block_anchor = empty();
-    			add_location(br0, file$1, 92, 0, 2546);
-    			add_location(br1, file$1, 105, 0, 2860);
+    			add_location(br0, file$1, 88, 0, 2499);
+    			add_location(br1, file$1, 101, 0, 2826);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -925,15 +925,12 @@ var app = (function () {
     	return block;
     }
 
-    const proxy = "http://127.0.0.1:8080/";
-
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
 
     	const fetchArticles = async () => {
-    		// const response = await fetch(proxy + "54.173.250.240:5000/articles");
-    		const response = await fetch("/articles");
+    		const response = await fetch("http://3.85.125.119:5050/articles");
 
     		if (!response.ok) {
     			throw `Error occured: ${response.status}`;
@@ -997,7 +994,6 @@ var app = (function () {
     		each,
     		is_empty,
     		SearchBar,
-    		proxy,
     		fetchArticles,
     		allArticles,
     		queriedArticles,

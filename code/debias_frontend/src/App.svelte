@@ -4,7 +4,7 @@
 
   //function to fetch REST API for processed articles
   const fetchArticles = async () => {
-    const response = await fetch("http://3.85.125.119:5000:5050/articles");
+    const response = await fetch("http://3.85.125.119:5050/articles");
 
     if (!response.ok) {
       throw `Error occured: ${response.status}`;
