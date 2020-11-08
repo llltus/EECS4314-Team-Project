@@ -9,7 +9,7 @@
 	--card-bg-color: white;
     --chip-bg-color: rgba(224, 224, 224, 0.8);
 	--chip-select-bg-color: rgba(180, 180, 180, 1);
-	--card-hover-color: rgba(0, 0, 0, 0.02);
+	--card-hover-color: rgba(0, 0, 0, 0.01);
 	--chip-hover-color: rgba(0, 0, 0, 0.12);
 }
 

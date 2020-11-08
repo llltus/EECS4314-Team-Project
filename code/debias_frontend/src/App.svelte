@@ -51,8 +51,6 @@
     filteredArticles = [...filteredArticles, queriedArticles];
   }
 
-  $: console.log(toneFilters);
-
   //reactive tone filtering
   $: filteredArticles = queriedArticles
     .filter((article) => {

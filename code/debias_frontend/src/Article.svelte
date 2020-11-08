@@ -1,8 +1,18 @@
 <script>
   export let article;
+  let toneScores = [];
   const openArticleLink = () => {
     window.open(article.url, "_blank");
   };
+  for (var toneScore in article.tones) {
+    if (article.tones.hasOwnProperty(toneScore)) {
+      toneScores.push({
+        name: toneScore,
+        score: article.tones[toneScore].toFixed(2),
+      });
+      console.log(toneScore + " -> " + article.tones[toneScore]);
+    }
+  }
 </script>
 
 <style>
@@ -45,6 +55,25 @@
     font-style: italic;
     text-align: right;
   }
+  .tone_scores {
+    margin-top: 8px;
+  }
+  .tone_score {
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: var(--chip-bg-color);
+    padding: 7px 12px;
+    border-radius: 24px;
+    margin: 16px 8px 0px 8px;
+    font-size: 13px;
+  }
+
+  @media only screen and (max-device-width: 860px) and (-webkit-min-device-pixel-ratio: 1) {
+    .card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 </style>
 
 <div class="card" on:click={openArticleLink}>
@@ -52,4 +81,9 @@
   <div class="date">{article.published_date}</div>
   <div class="abstract">{article.abstract}</div>
   <div class="author">- {article.authors}</div>
+  <div class="tone_scores">
+    {#each toneScores as toneScore}
+      <div class="tone_score">{toneScore.name}: {toneScore.score}</div>
+    {/each}
+  </div>
 </div>
