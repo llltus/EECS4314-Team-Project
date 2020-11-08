@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-    --primary-color: #302AE6;
-    --secondary-color: #536390;
+    --primary-color: #1d87ff;
+    --bg-color: #F5F5F5;
 	--hint-color: #a0a0a0;
-	--title-color: black;
 	--font-color: #424242;
 	--card-title-color: black;
 	--card-bg-color: white;
-    --bg-color: #F5F5F5;
-    --heading-color: #292922;
+    --chip-bg-color: rgba(224, 224, 224, 0.8);
+	--chip-select-bg-color: rgba(180, 180, 180, 1);
+	--card-hover-color: rgba(0, 0, 0, 0.02);
+	--chip-hover-color: rgba(0, 0, 0, 0.12);
 }
 
 [data-theme="dark"] {
-    --primary-color: #9A97F3;
-	--secondary-color: #818cab;
+    --primary-color: #469cff;
+    --bg-color: #121212;
 	--hint-color: #eeeeee;
-	--title-color: white;
-    --font-color: #e1e1ff;
+    --font-color: #cacaca;
 	--card-title-color: white;
-	--card-bg-color: black;
-    --bg-color: #161625;
-    --heading-color: #818cab;
+	--card-bg-color: rgb(27, 27, 27);
+    --chip-bg-color: rgba(31, 31, 31 , 0.8);
+    --chip-select-bg-color: rgba(80, 80, 80, 1);
+	--card-hover-color: rgba(255, 255, 255, 0.08);
+	--chip-hover-color: rgba(255, 255, 255, 0.08);
 }
 
 html, body {
@@ -31,12 +33,13 @@ html, body {
 	width: 100%;
 	max-width: 880px;
 	margin: auto;
-	margin-top: 120px;
+	margin-top: 16px;
 	text-align: center;
     font-family: Roboto;
     -webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	display: grid;
+    user-select: none;
 }
 
 .chip {

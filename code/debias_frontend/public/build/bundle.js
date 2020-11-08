@@ -483,16 +483,16 @@ var app = (function () {
     			div3 = element("div");
     			t6 = text("- ");
     			t7 = text(t7_value);
-    			attr_dev(div0, "class", "title svelte-1pyc4t4");
-    			add_location(div0, file, 50, 2, 1039);
-    			attr_dev(div1, "class", "date svelte-1pyc4t4");
-    			add_location(div1, file, 51, 2, 1083);
-    			attr_dev(div2, "class", "abstract svelte-1pyc4t4");
-    			add_location(div2, file, 52, 2, 1135);
-    			attr_dev(div3, "class", "author svelte-1pyc4t4");
-    			add_location(div3, file, 53, 2, 1185);
-    			attr_dev(div4, "class", "card svelte-1pyc4t4");
-    			add_location(div4, file, 49, 0, 990);
+    			attr_dev(div0, "class", "title svelte-hsj44y");
+    			add_location(div0, file, 50, 2, 1043);
+    			attr_dev(div1, "class", "date svelte-hsj44y");
+    			add_location(div1, file, 51, 2, 1087);
+    			attr_dev(div2, "class", "abstract svelte-hsj44y");
+    			add_location(div2, file, 52, 2, 1139);
+    			attr_dev(div3, "class", "author svelte-hsj44y");
+    			add_location(div3, file, 53, 2, 1189);
+    			attr_dev(div4, "class", "card svelte-hsj44y");
+    			add_location(div4, file, 49, 0, 994);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -640,23 +640,23 @@ var app = (function () {
     			span2 = element("span");
     			attr_dev(button, "id", "searchButton");
     			set_style(button, "display", "none");
-    			add_location(button, file$1, 100, 0, 2281);
+    			add_location(button, file$1, 100, 0, 2344);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "id", "inp");
     			attr_dev(input, "placeholder", " ");
-    			attr_dev(input, "class", "svelte-1f92ikq");
-    			add_location(input, file$1, 106, 2, 2417);
-    			attr_dev(span0, "class", "label svelte-1f92ikq");
-    			add_location(span0, file$1, 112, 2, 2575);
+    			attr_dev(input, "class", "svelte-bqf56w");
+    			add_location(input, file$1, 106, 2, 2480);
+    			attr_dev(span0, "class", "label svelte-bqf56w");
+    			add_location(span0, file$1, 112, 2, 2638);
     			attr_dev(i, "class", "material-icons");
-    			add_location(i, file$1, 113, 21, 2649);
-    			attr_dev(span1, "class", "icon svelte-1f92ikq");
-    			add_location(span1, file$1, 113, 2, 2630);
-    			attr_dev(span2, "class", "focus-bg svelte-1f92ikq");
-    			add_location(span2, file$1, 114, 2, 2696);
+    			add_location(i, file$1, 113, 21, 2712);
+    			attr_dev(span1, "class", "icon svelte-bqf56w");
+    			add_location(span1, file$1, 113, 2, 2693);
+    			attr_dev(span2, "class", "focus-bg svelte-bqf56w");
+    			add_location(span2, file$1, 114, 2, 2759);
     			attr_dev(label, "for", "inp");
-    			attr_dev(label, "class", "inp svelte-1f92ikq");
-    			add_location(label, file$1, 105, 0, 2384);
+    			attr_dev(label, "class", "inp svelte-bqf56w");
+    			add_location(label, file$1, 105, 0, 2447);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -779,7 +779,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (39:2) {#each tones as tone}
+    // (43:2) {#each tones as tone}
     function create_each_block(ctx) {
     	let input;
     	let input_name_value;
@@ -804,22 +804,22 @@ var app = (function () {
     			i.textContent = "fiber_manual_record";
     			span = element("span");
     			t2 = text(t2_value);
-    			attr_dev(input, "class", "chip svelte-3bppzg");
+    			attr_dev(input, "class", "chip svelte-141ev3t");
     			attr_dev(input, "type", "checkbox");
     			attr_dev(input, "name", input_name_value = /*tone*/ ctx[4].name.toLowerCase());
     			input.__value = input_value_value = /*tone*/ ctx[4].name.toLowerCase();
     			input.value = input.__value;
     			attr_dev(input, "id", input_id_value = /*tone*/ ctx[4].name.toLowerCase());
     			/*$$binding_groups*/ ctx[3][0].push(input);
-    			add_location(input, file$2, 39, 4, 685);
-    			attr_dev(i, "class", "material-icons svelte-3bppzg");
-    			add_location(i, file$2, 47, 6, 947);
-    			attr_dev(span, "class", "svelte-3bppzg");
-    			add_location(span, file$2, 47, 55, 996);
+    			add_location(input, file$2, 43, 4, 780);
+    			attr_dev(i, "class", "material-icons svelte-141ev3t");
+    			add_location(i, file$2, 51, 6, 1042);
+    			attr_dev(span, "class", "svelte-141ev3t");
+    			add_location(span, file$2, 51, 55, 1091);
     			set_style(label, "color", /*tone*/ ctx[4].color);
     			attr_dev(label, "for", label_for_value = /*tone*/ ctx[4].name.toLowerCase());
-    			attr_dev(label, "class", "svelte-3bppzg");
-    			add_location(label, file$2, 46, 4, 874);
+    			attr_dev(label, "class", "svelte-141ev3t");
+    			add_location(label, file$2, 50, 4, 969);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
@@ -877,7 +877,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(39:2) {#each tones as tone}",
+    		source: "(43:2) {#each tones as tone}",
     		ctx
     	});
 
@@ -902,8 +902,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(div, "class", "chip-container svelte-3bppzg");
-    			add_location(div, file$2, 37, 0, 626);
+    			attr_dev(div, "class", "chip-container svelte-141ev3t");
+    			add_location(div, file$2, 41, 0, 721);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1049,7 +1049,7 @@ var app = (function () {
     	let t0;
     	let div0;
     	let t1;
-    	let em;
+    	let span;
 
     	const block = {
     		c: function create() {
@@ -1059,21 +1059,21 @@ var app = (function () {
     			t0 = space();
     			div0 = element("div");
     			t1 = space();
-    			em = element("em");
-    			em.textContent = "Enable Dark Mode!";
+    			span = element("span");
+    			span.textContent = "Enable dark mode ;)";
     			attr_dev(input, "type", "checkbox");
     			attr_dev(input, "id", "checkbox");
-    			attr_dev(input, "class", "svelte-1v1darz");
-    			add_location(input, file$3, 97, 4, 1892);
-    			attr_dev(div0, "class", "slider round svelte-1v1darz");
-    			add_location(div0, file$3, 98, 4, 1962);
-    			attr_dev(label, "class", "theme-switch svelte-1v1darz");
+    			attr_dev(input, "class", "svelte-nbglxu");
+    			add_location(input, file$3, 98, 4, 1939);
+    			attr_dev(div0, "class", "slider round svelte-nbglxu");
+    			add_location(div0, file$3, 99, 4, 2009);
+    			attr_dev(label, "class", "theme-switch svelte-nbglxu");
     			attr_dev(label, "for", "checkbox");
-    			add_location(label, file$3, 96, 2, 1843);
-    			attr_dev(em, "class", "svelte-1v1darz");
-    			add_location(em, file$3, 100, 2, 2006);
-    			attr_dev(div1, "class", "theme-switch-wrapper svelte-1v1darz");
-    			add_location(div1, file$3, 95, 0, 1805);
+    			add_location(label, file$3, 97, 2, 1890);
+    			attr_dev(span, "class", "svelte-nbglxu");
+    			add_location(span, file$3, 101, 2, 2053);
+    			attr_dev(div1, "class", "theme-switch-wrapper svelte-nbglxu");
+    			add_location(div1, file$3, 96, 0, 1852);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1086,7 +1086,7 @@ var app = (function () {
     			append_dev(label, t0);
     			append_dev(label, div0);
     			append_dev(div1, t1);
-    			append_dev(div1, em);
+    			append_dev(div1, span);
     		},
     		p: noop,
     		i: noop,

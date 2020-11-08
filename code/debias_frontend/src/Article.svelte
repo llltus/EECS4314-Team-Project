@@ -18,7 +18,7 @@
     margin-bottom: 24px;
   }
   div.card:hover {
-    background: rgba(0, 0, 0, 0.01);
+    background: var(--card-hover-color);
   }
   .title {
     color: var(--card-title-color);
@@ -32,7 +32,7 @@
     font-weight: 500;
     font-size: 14px;
     text-align: left;
-    margin-top: 16px;
+    margin-top: 24px;
   }
   .abstract {
     margin-top: 24px;

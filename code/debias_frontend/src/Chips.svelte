@@ -16,7 +16,7 @@
 
   label {
     display: inline-block;
-    background-color: rgba(224, 224, 224, 0.8);
+    background-color: var(--chip-bg-color);
     padding: 7px 12px;
     border-radius: 24px;
     margin-top: 16px;
@@ -28,7 +28,11 @@
     appearance: none;
   }
   input[type=checkbox]:checked + label {
-    background-color: rgba(200, 200, 200, 1);
+    background-color: var(--chip-select-bg-color);
+  }
+  input:hover + label {
+    background: var(--chip-hover-color);
+    cursor: pointer;
   }
   span {
   color: var(--font-color);

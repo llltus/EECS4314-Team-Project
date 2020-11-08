@@ -34,20 +34,21 @@
 
 <style>
   .theme-switch-wrapper {
-    display: flex;
-    align-items: center;
+    text-align: right;
+    margin-right: 32px;
+    margin-bottom: 32px;
   }
 
-  em {
-    margin-left: 10px;
+  span {
+    margin-left: 16px;
     font-size: 1rem;
   }
 
   .theme-switch {
     display: inline-block;
-    height: 34px;
+    height: 24px;
     position: relative;
-    width: 60px;
+    width: 48px;
   }
 
   .theme-switch input {
@@ -58,7 +59,7 @@
     background-color: #ccc;
     bottom: 0;
     cursor: pointer;
-    left: 0;
+    left: -2px;
     position: absolute;
     right: 0;
     top: 0;
@@ -67,17 +68,17 @@
 
   .slider:before {
     background-color: #fff;
-    bottom: 4px;
+    bottom: 2px;
     content: "";
-    height: 26px;
-    left: 4px;
+    height: 20px;
+    left: 2px;
     position: absolute;
     transition: 0.4s;
-    width: 26px;
+    width: 20px;
   }
 
   input:checked + .slider {
-    background-color: #66bb6a;
+    background-color: var(--primary-color);
   }
 
   input:checked + .slider:before {
@@ -98,5 +99,5 @@
     <input type="checkbox" id="checkbox" bind:this={toggleSwitch} />
     <div class="slider round" />
   </label>
-  <em>Enable Dark Mode!</em>
+  <span>Enable dark mode ;)</span>
 </div>

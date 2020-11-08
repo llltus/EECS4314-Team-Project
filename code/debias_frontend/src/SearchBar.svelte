@@ -17,9 +17,9 @@
     position: relative;
     margin: auto;
     width: 100%;
-    max-width: 86%;
+    max-width: 80%;
     border-radius: 3px;
-    background-color: white;
+    background-color: var(--card-bg-color);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.14);
   }
 
@@ -71,28 +71,28 @@
     font-size: 16px;
     font-weight: 400;
     background: rgba(0, 0, 0, 0);
-    color: #000;
+    color: var(--font-color);
     -webkit-transition: all 0.15s ease;
     transition: all 0.15s ease;
   }
 
   .inp input:hover {
-    background: rgba(0, 0, 0, 0.02);
+    background-color: var(--card-hover-color);
   }
 
   .inp input:not(:placeholder-shown) + .label {
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--font-color);
     -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
     transform: translate3d(0, -12px, 0) scale(0.75);
   }
 
   .inp input:focus {
     outline: none;
-    box-shadow: inset 0 -2px 0 #0077ff;
+    box-shadow: inset 0 -2px 0 var(--primary-color);
   }
 
   .inp input:focus + .label {
-    color: #0077ff;
+    color: var(--primary-color);
     -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
     transform: translate3d(0, -12px, 0) scale(0.75);
   }
