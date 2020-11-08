@@ -1,6 +1,8 @@
 <script>
   import { each, is_empty } from "svelte/internal";
+  import Article from "./Article.svelte";
   import SearchBar from "./SearchBar.svelte";
+  import Chips from "./Chips.svelte";
 
   //function to fetch REST API for processed articles
   const fetchArticles = async () => {
@@ -48,6 +50,8 @@
     filteredArticles = [...filteredArticles, queriedArticles];
   }
 
+  $: console.log(toneFilters);
+
   //reactive tone filtering
   $: filteredArticles = queriedArticles
     .filter((article) => {
@@ -83,27 +87,14 @@
 </style>
 
 <!-- HTML Template -->
-
 <SearchBar on:testEmit={queryArticles} />
-
 <br />
-{#each tones as tone}
-  <input
-    class="chip"
-    type="checkbox"
-    bind:group={toneFilters}
-    name={tone.name.toLowerCase()}
-    value={tone.name.toLowerCase()}
-    id={tone.name.toLowerCase()} />
-  <label
-    style="color: {tone.color}"
-    for={tone.name.toLowerCase()}>{tone.name}</label>
-{/each}
+<Chips {tones} bind:group={toneFilters} />
 <br />
 {#if allArticles.length == 0}
   <p style="background: red;">Empty list</p>
 {:else}
   {#each filteredArticles as article}
-    <p>{article.title} - {article.published_date} <br> {article.abstract} <br> - {article.authors}</p>
+    <Article {article} />
   {/each}
 {/if}
