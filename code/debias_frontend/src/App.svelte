@@ -3,6 +3,7 @@
   import Article from "./Article.svelte";
   import SearchBar from "./SearchBar.svelte";
   import Chips from "./Chips.svelte";
+  import ThemeToggle from "./ThemeToggle.svelte";
 
   //function to fetch REST API for processed articles
   const fetchArticles = async () => {
@@ -87,6 +88,9 @@
 </style>
 
 <!-- HTML Template -->
+
+<ThemeToggle />
+
 <SearchBar on:testEmit={queryArticles} />
 <br />
 <Chips {tones} bind:group={toneFilters} />
