@@ -8,6 +8,7 @@
   const clickSearch = () => document.getElementById("searchButton").click();
 
   function emitSearchQuery() {
+    document.activeElement.blur();
     dispatch("testEmit", searchQuery);
   }
 </script>

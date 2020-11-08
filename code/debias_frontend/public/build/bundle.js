@@ -454,7 +454,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (85:4) {#each toneScores as toneScore}
+    // (84:4) {#each toneScores as toneScore}
     function create_each_block(ctx) {
     	let div;
     	let t0_value = /*toneScore*/ ctx[3].name + "";
@@ -469,8 +469,8 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = text(": ");
     			t2 = text(t2_value);
-    			attr_dev(div, "class", "tone_score svelte-1xbsais");
-    			add_location(div, file, 85, 6, 2061);
+    			attr_dev(div, "class", "tone_score svelte-nfi2bk");
+    			add_location(div, file, 84, 6, 2059);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -488,7 +488,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(85:4) {#each toneScores as toneScore}",
+    		source: "(84:4) {#each toneScores as toneScore}",
     		ctx
     	});
 
@@ -547,18 +547,18 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(div0, "class", "title svelte-1xbsais");
-    			add_location(div0, file, 79, 2, 1796);
-    			attr_dev(div1, "class", "date svelte-1xbsais");
-    			add_location(div1, file, 80, 2, 1840);
-    			attr_dev(div2, "class", "abstract svelte-1xbsais");
-    			add_location(div2, file, 81, 2, 1892);
-    			attr_dev(div3, "class", "author svelte-1xbsais");
-    			add_location(div3, file, 82, 2, 1942);
-    			attr_dev(div4, "class", "tone_scores svelte-1xbsais");
-    			add_location(div4, file, 83, 2, 1991);
-    			attr_dev(div5, "class", "card svelte-1xbsais");
-    			add_location(div5, file, 78, 0, 1747);
+    			attr_dev(div0, "class", "title svelte-nfi2bk");
+    			add_location(div0, file, 78, 2, 1794);
+    			attr_dev(div1, "class", "date svelte-nfi2bk");
+    			add_location(div1, file, 79, 2, 1838);
+    			attr_dev(div2, "class", "abstract svelte-nfi2bk");
+    			add_location(div2, file, 80, 2, 1890);
+    			attr_dev(div3, "class", "author svelte-nfi2bk");
+    			add_location(div3, file, 81, 2, 1940);
+    			attr_dev(div4, "class", "tone_scores svelte-nfi2bk");
+    			add_location(div4, file, 82, 2, 1989);
+    			attr_dev(div5, "class", "card svelte-nfi2bk");
+    			add_location(div5, file, 77, 0, 1745);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -756,23 +756,23 @@ var app = (function () {
     			span2 = element("span");
     			attr_dev(button, "id", "searchButton");
     			set_style(button, "display", "none");
-    			add_location(button, file$1, 100, 0, 2344);
+    			add_location(button, file$1, 101, 0, 2380);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "id", "inp");
     			attr_dev(input, "placeholder", " ");
     			attr_dev(input, "class", "svelte-bqf56w");
-    			add_location(input, file$1, 106, 2, 2480);
+    			add_location(input, file$1, 107, 2, 2516);
     			attr_dev(span0, "class", "label svelte-bqf56w");
-    			add_location(span0, file$1, 112, 2, 2638);
+    			add_location(span0, file$1, 113, 2, 2674);
     			attr_dev(i, "class", "material-icons");
-    			add_location(i, file$1, 113, 21, 2712);
+    			add_location(i, file$1, 114, 21, 2748);
     			attr_dev(span1, "class", "icon svelte-bqf56w");
-    			add_location(span1, file$1, 113, 2, 2693);
+    			add_location(span1, file$1, 114, 2, 2729);
     			attr_dev(span2, "class", "focus-bg svelte-bqf56w");
-    			add_location(span2, file$1, 114, 2, 2759);
+    			add_location(span2, file$1, 115, 2, 2795);
     			attr_dev(label, "for", "inp");
     			attr_dev(label, "class", "inp svelte-bqf56w");
-    			add_location(label, file$1, 105, 0, 2447);
+    			add_location(label, file$1, 106, 0, 2483);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -836,6 +836,7 @@ var app = (function () {
     	const clickSearch = () => document.getElementById("searchButton").click();
 
     	function emitSearchQuery() {
+    		document.activeElement.blur();
     		dispatch("testEmit", searchQuery);
     	}
 
@@ -1306,7 +1307,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (98:0) {:else}
+    // (116:0) {:else}
     function create_else_block(ctx) {
     	let each_1_anchor;
     	let current;
@@ -1395,32 +1396,32 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(98:0) {:else}",
+    		source: "(116:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (96:0) {#if allArticles.length == 0}
+    // (114:0) {#if allArticles.length == 0}
     function create_if_block(ctx) {
-    	let p;
+    	let div;
 
     	const block = {
     		c: function create() {
-    			p = element("p");
-    			p.textContent = "Empty list";
-    			set_style(p, "background", "red");
-    			add_location(p, file$4, 96, 2, 2754);
+    			div = element("div");
+    			div.textContent = "- No news articles found -";
+    			attr_dev(div, "class", "empty-list-card svelte-j1mtvw");
+    			add_location(div, file$4, 114, 2, 3244);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
+    			insert_dev(target, div, anchor);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(div);
     		}
     	};
 
@@ -1428,14 +1429,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(96:0) {#if allArticles.length == 0}",
+    		source: "(114:0) {#if allArticles.length == 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (99:2) {#each filteredArticles as article}
+    // (117:2) {#each filteredArticles as article}
     function create_each_block$2(ctx) {
     	let article;
     	let current;
@@ -1476,7 +1477,7 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(99:2) {#each filteredArticles as article}",
+    		source: "(117:2) {#each filteredArticles as article}",
     		ctx
     	});
 
@@ -1540,8 +1541,8 @@ var app = (function () {
     			t4 = space();
     			if_block.c();
     			if_block_anchor = empty();
-    			add_location(br0, file$4, 92, 0, 2661);
-    			add_location(br1, file$4, 94, 0, 2713);
+    			add_location(br0, file$4, 110, 0, 3151);
+    			add_location(br1, file$4, 112, 0, 3203);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

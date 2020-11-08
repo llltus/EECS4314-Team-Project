@@ -67,7 +67,6 @@
     margin: 16px 8px 0px 8px;
     font-size: 13px;
   }
-
   @media only screen and (max-device-width: 860px) and (-webkit-min-device-pixel-ratio: 1) {
     .card {
       width: 100%;

@@ -83,6 +83,24 @@
 </script>
 
 <style>
+  .empty-list-card {
+    background-color: var(--card-bg-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.14);
+    border-radius: 4px;
+    padding: 24px;
+    cursor: pointer;
+    width: 96%;
+    max-width: 720px;
+    margin: auto;
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+@media only screen and (max-device-width: 860px) and (-webkit-min-device-pixel-ratio: 1) {
+  .empty-list-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 </style>
 
 <!-- HTML Template -->
@@ -94,7 +112,7 @@
 <Chips {tones} bind:group={toneFilters} />
 <br />
 {#if allArticles.length == 0}
-  <p style="background: red;">Empty list</p>
+  <div class="empty-list-card">- No news articles found -</div>
 {:else}
   {#each filteredArticles as article}
     <Article {article} />
