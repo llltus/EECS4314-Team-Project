@@ -1,18 +1,10 @@
 <script>
   export let article;
-  let toneScores = [];
+  let tones;
   const openArticleLink = () => {
-    window.open(article.url, "_blank");
+    window.open(article.url, "_self");
   };
-  for (var toneScore in article.tones) {
-    if (article.tones.hasOwnProperty(toneScore)) {
-      toneScores.push({
-        name: toneScore,
-        score: article.tones[toneScore].toFixed(2),
-      });
-      console.log(toneScore + " -> " + article.tones[toneScore]);
-    }
-  }
+  $: tones = Object.entries(article.tones);
 </script>
 
 <style>
@@ -28,7 +20,7 @@
     margin-bottom: 24px;
   }
   div.card:hover {
-    background: var(--card-hover-color);
+    background-color: var(--card-hover-color);
   }
   .title {
     color: var(--card-title-color);
@@ -53,7 +45,7 @@
     margin-top: 24px;
     font-size: 14px;
     font-style: italic;
-    text-align: right;
+    text-align: left;
   }
   .tone_scores {
     margin-top: 8px;
@@ -66,6 +58,7 @@
     border-radius: 24px;
     margin: 16px 8px 0px 8px;
     font-size: 13px;
+    background-color: var(--tone-chip-bg-color);
   }
   @media only screen and (max-device-width: 860px) and (-webkit-min-device-pixel-ratio: 1) {
     .card {
@@ -81,8 +74,8 @@
   <div class="abstract">{article.abstract}</div>
   <div class="author">- {article.authors}</div>
   <div class="tone_scores">
-    {#each toneScores as toneScore}
-      <div class="tone_score">{toneScore.name}: {toneScore.score}</div>
+    {#each tones as tone}
+      <div class="tone_score">{tone[0]}: {tone[1].toFixed(2)}</div>
     {/each}
   </div>
 </div>

@@ -97,6 +97,12 @@
     -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
     transform: translate3d(0, -12px, 0) scale(0.75);
   }
+  @media only screen and (max-device-width: 860px) and (-webkit-min-device-pixel-ratio: 1) {
+    .inp {
+      width: 100%;
+      max-width: 96%;
+    }
+  }
 </style>
 
 <button

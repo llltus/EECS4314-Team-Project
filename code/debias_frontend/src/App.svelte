@@ -22,13 +22,13 @@
   let filteredArticles = [];
   let toneFilters = [];
   let tones = [
-    { name: "Anger", color: "#E80521" },
-    { name: "Fear", color: "#325E2B" },
-    { name: "Joy", color: "#FFD629" },
-    { name: "Sadness", color: "#086DB2" },
-    { name: "Analytical", color: "#075CD8" },
-    { name: "Confident", color: "#592684" },
-    { name: "Tentative", color: "#1AE5CD" },
+    { name: "Anger", icon: "local_fire_department" },
+    { name: "Fear", icon: "pest_control" },
+    { name: "Joy", icon: "emoji_nature" },
+    { name: "Sadness", icon: "sentiment_very_dissatisfied" },
+    { name: "Analytical", icon: "leaderboard" },
+    { name: "Confident", icon: "emoji_objects" },
+    { name: "Tentative", icon: "psychology" },
   ];
 
   //fetch articles async
@@ -95,22 +95,19 @@
     margin-bottom: 24px;
     font-style: italic;
   }
-@media only screen and (max-device-width: 860px) and (-webkit-min-device-pixel-ratio: 1) {
-  .empty-list-card {
-    width: 100%;
-    max-width: 100%;
+  @media only screen and (max-device-width: 860px) and (-webkit-min-device-pixel-ratio: 1) {
+    .empty-list-card {
+      width: 100%;
+      max-width: 100%;
+    }
   }
-}
 </style>
 
 <!-- HTML Template -->
 
 <ThemeToggle />
-
 <SearchBar on:testEmit={queryArticles} />
-<br />
 <Chips {tones} bind:group={toneFilters} />
-<br />
 {#if allArticles.length == 0}
   <div class="empty-list-card">- No news articles found -</div>
 {:else}

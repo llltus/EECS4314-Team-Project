@@ -1,56 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-    --primary-color: #1d87ff;
-    --bg-color: #F5F5F5;
-	--hint-color: #a0a0a0;
-	--font-color: #424242;
-	--card-title-color: black;
-	--card-bg-color: white;
-    --chip-bg-color: rgba(224, 224, 224, 0.8);
-	--chip-select-bg-color: rgba(180, 180, 180, 1);
-	--card-hover-color: rgba(0, 0, 0, 0.01);
-	--chip-hover-color: rgba(0, 0, 0, 0.12);
+  --primary-color: #1d87ff;
+  --primary-hover-color: #bbdefb;
+  --bg-color: #f5f5f5;
+  --hint-color: #a0a0a0;
+  --font-color: #424242;
+  --selected-font-color: white;
+  --card-title-color: black;
+  --card-bg-color: white;
+  --card-hover-color: rgb(248, 248, 248);
+  --chip-bg-color: white;
+  --chip-border-color: rgb(228, 228, 228);
+  --chip-hover-color: rgba(0, 0, 0, 0.12);
+  --tone-chip-bg-color: rgba(224, 224, 224, 0.8);
 }
 
 [data-theme="dark"] {
-    --primary-color: #469cff;
-    --bg-color: #121212;
-	--hint-color: #eeeeee;
-    --font-color: #cacaca;
-	--card-title-color: white;
-	--card-bg-color: rgb(27, 27, 27);
-    --chip-bg-color: rgba(31, 31, 31 , 0.8);
-    --chip-select-bg-color: rgba(80, 80, 80, 1);
-	--card-hover-color: rgba(255, 255, 255, 0.08);
-	--chip-hover-color: rgba(255, 255, 255, 0.08);
+  --primary-color: #469cff;
+  --primary-hover-color: #153d5d;
+  --bg-color: #121212;
+  --hint-color: #eeeeee;
+  --font-color: #cacaca;
+  --selected-font-color: #ffffff;
+  --card-title-color: white;
+  --card-bg-color: rgb(24, 24, 24);
+  --card-hover-color: rgba(255, 255, 255, 0.04);
+  --chip-bg-color: rgba(31, 31, 31, 0.8);
+  --chip-border-color: rgb(36, 36, 36);
+  --chip-hover-color: rgba(255, 255, 255, 0.08);
+  --tone-chip-bg-color: rgba(31, 31, 31, 0.8);
 }
 
-html, body {
-	background-color: var(--bg-color);
-	color: var(--font-color);
-	position: relative;
-	width: 100%;
-	max-width: 880px;
-	margin: auto;
-	margin-top: 16px;
-	text-align: center;
-    font-family: Roboto;
-    -webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	display: grid;
-    user-select: none;
+html,
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  margin-top: 16px;
+  text-align: center;
+  font-family: Roboto;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  user-select: none;
 }
 
 .chip {
-	margin: 0.6rem;
+  margin: 0.6rem;
 }
-  
+
 * {
   box-sizing: border-box;
 }
 
 .material-icons {
-    display: inline-flex;
-	vertical-align: middle;
+  display: inline-flex;
+  vertical-align: middle;
 }
