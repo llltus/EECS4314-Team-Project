@@ -22,13 +22,13 @@
   let filteredArticles = [];
   let toneFilters = [];
   let tones = [
-    { name: "Anger", color: "red" },
-    { name: "Fear", color: "green" },
-    { name: "Joy", color: "yellow" },
-    { name: "Sadness", color: "lightblue" },
-    { name: "Analytical", color: "blue" },
-    { name: "Confident", color: "purple" },
-    { name: "Tentative", color: "cyan" },
+    { name: "Anger", color: "#E80521" },
+    { name: "Fear", color: "#325E2B" },
+    { name: "Joy", color: "#FFD629" },
+    { name: "Sadness", color: "#086DB2" },
+    { name: "Analytical", color: "#075CD8" },
+    { name: "Confident", color: "#592684" },
+    { name: "Tentative", color: "#1AE5CD" },
   ];
 
   //fetch articles async

@@ -448,85 +448,85 @@ var app = (function () {
     const file = "src\\Article.svelte";
 
     function create_fragment(ctx) {
-    	let p;
+    	let div4;
+    	let div0;
     	let t0_value = /*article*/ ctx[0].title + "";
     	let t0;
     	let t1;
+    	let div1;
     	let t2_value = /*article*/ ctx[0].published_date + "";
     	let t2;
     	let t3;
-    	let br0;
+    	let div2;
+    	let t4_value = /*article*/ ctx[0].abstract + "";
     	let t4;
-    	let t5_value = /*article*/ ctx[0].abstract + "";
     	let t5;
+    	let div3;
     	let t6;
-    	let br1;
+    	let t7_value = /*article*/ ctx[0].authors + "";
     	let t7;
-    	let t8_value = /*article*/ ctx[0].authors + "";
-    	let t8;
-    	let t9;
-    	let button;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
-    			p = element("p");
+    			div4 = element("div");
+    			div0 = element("div");
     			t0 = text(t0_value);
-    			t1 = text("\r\n  -\r\n  ");
+    			t1 = space();
+    			div1 = element("div");
     			t2 = text(t2_value);
     			t3 = space();
-    			br0 = element("br");
-    			t4 = space();
-    			t5 = text(t5_value);
-    			t6 = space();
-    			br1 = element("br");
-    			t7 = text("\r\n  -\r\n  ");
-    			t8 = text(t8_value);
-    			t9 = space();
-    			button = element("button");
-    			button.textContent = "Open";
-    			add_location(br0, file, 11, 2, 187);
-    			add_location(br1, file, 13, 2, 219);
-    			add_location(p, file, 7, 0, 128);
-    			add_location(button, file, 17, 0, 259);
+    			div2 = element("div");
+    			t4 = text(t4_value);
+    			t5 = space();
+    			div3 = element("div");
+    			t6 = text("- ");
+    			t7 = text(t7_value);
+    			attr_dev(div0, "class", "title svelte-1pyc4t4");
+    			add_location(div0, file, 50, 2, 1039);
+    			attr_dev(div1, "class", "date svelte-1pyc4t4");
+    			add_location(div1, file, 51, 2, 1083);
+    			attr_dev(div2, "class", "abstract svelte-1pyc4t4");
+    			add_location(div2, file, 52, 2, 1135);
+    			attr_dev(div3, "class", "author svelte-1pyc4t4");
+    			add_location(div3, file, 53, 2, 1185);
+    			attr_dev(div4, "class", "card svelte-1pyc4t4");
+    			add_location(div4, file, 49, 0, 990);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, p, anchor);
-    			append_dev(p, t0);
-    			append_dev(p, t1);
-    			append_dev(p, t2);
-    			append_dev(p, t3);
-    			append_dev(p, br0);
-    			append_dev(p, t4);
-    			append_dev(p, t5);
-    			append_dev(p, t6);
-    			append_dev(p, br1);
-    			append_dev(p, t7);
-    			append_dev(p, t8);
-    			insert_dev(target, t9, anchor);
-    			insert_dev(target, button, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div0);
+    			append_dev(div0, t0);
+    			append_dev(div4, t1);
+    			append_dev(div4, div1);
+    			append_dev(div1, t2);
+    			append_dev(div4, t3);
+    			append_dev(div4, div2);
+    			append_dev(div2, t4);
+    			append_dev(div4, t5);
+    			append_dev(div4, div3);
+    			append_dev(div3, t6);
+    			append_dev(div3, t7);
 
     			if (!mounted) {
-    				dispose = listen_dev(button, "click", /*openArticleLink*/ ctx[1], false, false, false);
+    				dispose = listen_dev(div4, "click", /*openArticleLink*/ ctx[1], false, false, false);
     				mounted = true;
     			}
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*article*/ 1 && t0_value !== (t0_value = /*article*/ ctx[0].title + "")) set_data_dev(t0, t0_value);
     			if (dirty & /*article*/ 1 && t2_value !== (t2_value = /*article*/ ctx[0].published_date + "")) set_data_dev(t2, t2_value);
-    			if (dirty & /*article*/ 1 && t5_value !== (t5_value = /*article*/ ctx[0].abstract + "")) set_data_dev(t5, t5_value);
-    			if (dirty & /*article*/ 1 && t8_value !== (t8_value = /*article*/ ctx[0].authors + "")) set_data_dev(t8, t8_value);
+    			if (dirty & /*article*/ 1 && t4_value !== (t4_value = /*article*/ ctx[0].abstract + "")) set_data_dev(t4, t4_value);
+    			if (dirty & /*article*/ 1 && t7_value !== (t7_value = /*article*/ ctx[0].authors + "")) set_data_dev(t7, t7_value);
     		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(p);
-    			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(button);
+    			if (detaching) detach_dev(div4);
     			mounted = false;
     			dispose();
     		}
@@ -640,23 +640,23 @@ var app = (function () {
     			span2 = element("span");
     			attr_dev(button, "id", "searchButton");
     			set_style(button, "display", "none");
-    			add_location(button, file$1, 104, 0, 2737);
+    			add_location(button, file$1, 100, 0, 2281);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "id", "inp");
     			attr_dev(input, "placeholder", " ");
-    			attr_dev(input, "class", "svelte-h8juu4");
-    			add_location(input, file$1, 110, 2, 2873);
-    			attr_dev(span0, "class", "label svelte-h8juu4");
-    			add_location(span0, file$1, 116, 2, 3031);
+    			attr_dev(input, "class", "svelte-1f92ikq");
+    			add_location(input, file$1, 106, 2, 2417);
+    			attr_dev(span0, "class", "label svelte-1f92ikq");
+    			add_location(span0, file$1, 112, 2, 2575);
     			attr_dev(i, "class", "material-icons");
-    			add_location(i, file$1, 117, 21, 3105);
-    			attr_dev(span1, "class", "icon svelte-h8juu4");
-    			add_location(span1, file$1, 117, 2, 3086);
-    			attr_dev(span2, "class", "focus-bg svelte-h8juu4");
-    			add_location(span2, file$1, 118, 2, 3152);
+    			add_location(i, file$1, 113, 21, 2649);
+    			attr_dev(span1, "class", "icon svelte-1f92ikq");
+    			add_location(span1, file$1, 113, 2, 2630);
+    			attr_dev(span2, "class", "focus-bg svelte-1f92ikq");
+    			add_location(span2, file$1, 114, 2, 2696);
     			attr_dev(label, "for", "inp");
-    			attr_dev(label, "class", "inp svelte-h8juu4");
-    			add_location(label, file$1, 109, 0, 2840);
+    			attr_dev(label, "class", "inp svelte-1f92ikq");
+    			add_location(label, file$1, 105, 0, 2384);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -779,7 +779,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (6:0) {#each tones as tone}
+    // (39:2) {#each tones as tone}
     function create_each_block(ctx) {
     	let input;
     	let input_name_value;
@@ -787,8 +787,10 @@ var app = (function () {
     	let input_id_value;
     	let t0;
     	let label;
-    	let t1_value = /*tone*/ ctx[4].name + "";
-    	let t1;
+    	let i;
+    	let span;
+    	let t2_value = /*tone*/ ctx[4].name + "";
+    	let t2;
     	let label_for_value;
     	let mounted;
     	let dispose;
@@ -798,25 +800,35 @@ var app = (function () {
     			input = element("input");
     			t0 = space();
     			label = element("label");
-    			t1 = text(t1_value);
-    			attr_dev(input, "class", "chip");
+    			i = element("i");
+    			i.textContent = "fiber_manual_record";
+    			span = element("span");
+    			t2 = text(t2_value);
+    			attr_dev(input, "class", "chip svelte-3bppzg");
     			attr_dev(input, "type", "checkbox");
     			attr_dev(input, "name", input_name_value = /*tone*/ ctx[4].name.toLowerCase());
     			input.__value = input_value_value = /*tone*/ ctx[4].name.toLowerCase();
     			input.value = input.__value;
     			attr_dev(input, "id", input_id_value = /*tone*/ ctx[4].name.toLowerCase());
     			/*$$binding_groups*/ ctx[3][0].push(input);
-    			add_location(input, file$2, 6, 2, 90);
+    			add_location(input, file$2, 39, 4, 685);
+    			attr_dev(i, "class", "material-icons svelte-3bppzg");
+    			add_location(i, file$2, 47, 6, 947);
+    			attr_dev(span, "class", "svelte-3bppzg");
+    			add_location(span, file$2, 47, 55, 996);
     			set_style(label, "color", /*tone*/ ctx[4].color);
     			attr_dev(label, "for", label_for_value = /*tone*/ ctx[4].name.toLowerCase());
-    			add_location(label, file$2, 13, 2, 265);
+    			attr_dev(label, "class", "svelte-3bppzg");
+    			add_location(label, file$2, 46, 4, 874);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, input, anchor);
     			input.checked = ~/*group*/ ctx[0].indexOf(input.__value);
     			insert_dev(target, t0, anchor);
     			insert_dev(target, label, anchor);
-    			append_dev(label, t1);
+    			append_dev(label, i);
+    			append_dev(label, span);
+    			append_dev(span, t2);
 
     			if (!mounted) {
     				dispose = listen_dev(input, "change", /*input_change_handler*/ ctx[2]);
@@ -841,7 +853,7 @@ var app = (function () {
     				input.checked = ~/*group*/ ctx[0].indexOf(input.__value);
     			}
 
-    			if (dirty & /*tones*/ 2 && t1_value !== (t1_value = /*tone*/ ctx[4].name + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*tones*/ 2 && t2_value !== (t2_value = /*tone*/ ctx[4].name + "")) set_data_dev(t2, t2_value);
 
     			if (dirty & /*tones*/ 2) {
     				set_style(label, "color", /*tone*/ ctx[4].color);
@@ -865,7 +877,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(6:0) {#each tones as tone}",
+    		source: "(39:2) {#each tones as tone}",
     		ctx
     	});
 
@@ -873,7 +885,7 @@ var app = (function () {
     }
 
     function create_fragment$2(ctx) {
-    	let each_1_anchor;
+    	let div;
     	let each_value = /*tones*/ ctx[1];
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -884,21 +896,24 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
+    			div = element("div");
+
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			each_1_anchor = empty();
+    			attr_dev(div, "class", "chip-container svelte-3bppzg");
+    			add_location(div, file$2, 37, 0, 626);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(target, anchor);
-    			}
+    			insert_dev(target, div, anchor);
 
-    			insert_dev(target, each_1_anchor, anchor);
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div, null);
+    			}
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*tones, group*/ 3) {
@@ -914,7 +929,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    						each_blocks[i].m(div, null);
     					}
     				}
 
@@ -928,8 +943,8 @@ var app = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
@@ -1282,7 +1297,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Empty list";
     			set_style(p, "background", "red");
-    			add_location(p, file$4, 98, 2, 2776);
+    			add_location(p, file$4, 98, 2, 2788);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -1411,8 +1426,8 @@ var app = (function () {
     			t4 = space();
     			if_block.c();
     			if_block_anchor = empty();
-    			add_location(br0, file$4, 94, 0, 2683);
-    			add_location(br1, file$4, 96, 0, 2735);
+    			add_location(br0, file$4, 94, 0, 2695);
+    			add_location(br1, file$4, 96, 0, 2747);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1529,13 +1544,13 @@ var app = (function () {
     	let toneFilters = [];
 
     	let tones = [
-    		{ name: "Anger", color: "red" },
-    		{ name: "Fear", color: "green" },
-    		{ name: "Joy", color: "yellow" },
-    		{ name: "Sadness", color: "lightblue" },
-    		{ name: "Analytical", color: "blue" },
-    		{ name: "Confident", color: "purple" },
-    		{ name: "Tentative", color: "cyan" }
+    		{ name: "Anger", color: "#E80521" },
+    		{ name: "Fear", color: "#325E2B" },
+    		{ name: "Joy", color: "#FFD629" },
+    		{ name: "Sadness", color: "#086DB2" },
+    		{ name: "Analytical", color: "#075CD8" },
+    		{ name: "Confident", color: "#592684" },
+    		{ name: "Tentative", color: "#1AE5CD" }
     	];
 
     	//fetch articles async

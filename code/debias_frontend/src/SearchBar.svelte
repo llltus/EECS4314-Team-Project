@@ -20,11 +20,9 @@
     max-width: 86%;
     border-radius: 3px;
     background-color: white;
-
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.14);
-    /* -webkit-box-shadow: 1px 6px 8px 0px rgba(0,0,0,0.06);
-  -moz-box-shadow: 1px 6px 8px 0px rgba(0,0,0,0.06); */
   }
+
   .inp .label {
     position: absolute;
     top: 18px;
@@ -39,12 +37,14 @@
     transition: all 0.2s ease;
     pointer-events: none;
   }
+
   .inp .icon {
     position: absolute;
     top: 16px;
     right: 16px;
     color: var(--hint-color);
   }
+
   .inp .focus-bg {
     position: absolute;
     top: 0;
@@ -58,6 +58,7 @@
     -webkit-transform-origin: left;
     transform-origin: left;
   }
+
   .inp input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -69,37 +70,32 @@
     height: 56px;
     font-size: 16px;
     font-weight: 400;
-    background: rgba(0, 0, 0, 0.00);
-    /* box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3); */
+    background: rgba(0, 0, 0, 0);
     color: #000;
     -webkit-transition: all 0.15s ease;
     transition: all 0.15s ease;
   }
+
   .inp input:hover {
     background: rgba(0, 0, 0, 0.02);
-    /* box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5); */
   }
+
   .inp input:not(:placeholder-shown) + .label {
     color: rgba(0, 0, 0, 0.5);
     -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
     transform: translate3d(0, -12px, 0) scale(0.75);
   }
+
   .inp input:focus {
-    /* background: rgba(0, 0, 0, 0.05); */
     outline: none;
     box-shadow: inset 0 -2px 0 #0077ff;
   }
+
   .inp input:focus + .label {
     color: #0077ff;
     -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
     transform: translate3d(0, -12px, 0) scale(0.75);
   }
-  /* .inp input:focus + .label + .focus-bg {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-  } */
 </style>
 
 <button

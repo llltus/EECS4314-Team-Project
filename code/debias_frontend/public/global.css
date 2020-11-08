@@ -4,7 +4,10 @@
     --primary-color: #302AE6;
     --secondary-color: #536390;
 	--hint-color: #a0a0a0;
-    --font-color: #424242;
+	--title-color: black;
+	--font-color: #424242;
+	--card-title-color: black;
+	--card-bg-color: white;
     --bg-color: #F5F5F5;
     --heading-color: #292922;
 }
@@ -13,7 +16,10 @@
     --primary-color: #9A97F3;
 	--secondary-color: #818cab;
 	--hint-color: #eeeeee;
+	--title-color: white;
     --font-color: #e1e1ff;
+	--card-title-color: white;
+	--card-bg-color: black;
     --bg-color: #161625;
     --heading-color: #818cab;
 }
@@ -23,8 +29,7 @@ html, body {
 	color: var(--font-color);
 	position: relative;
 	width: 100%;
-	height: 100%;
-	max-width: 600px;
+	max-width: 880px;
 	margin: auto;
 	margin-top: 120px;
 	text-align: center;
@@ -33,12 +38,6 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 	display: grid;
 }
-
-/* .search-bar {
-	width:240px;
-	margin: 2rem;
-    box-sizing: border-box;
-} */
 
 .chip {
 	margin: 0.6rem;
