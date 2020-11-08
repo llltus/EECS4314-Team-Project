@@ -4,12 +4,8 @@ import json
 from flask import Flask, jsonify, request
 import pymongo
 from pymongo import MongoClient
-from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
-
 
 def get_db():
     client = MongoClient(host='debias_db',

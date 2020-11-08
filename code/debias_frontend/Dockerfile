@@ -12,8 +12,8 @@ COPY ./public ./public
 
 RUN npm run-script build
 
-# EXPOSE 5000
+EXPOSE 5000
 
-# ENV HOST=0.0.0.0
+ENV HOST=0.0.0.0
 
 CMD [ "npm", "start" ]
