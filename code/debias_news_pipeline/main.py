@@ -29,7 +29,7 @@ def create_document(article_meta_array):
 
 
 def post_document(document):
-    url = 'http://3.85.125.119:5050/articles/insert'
+    url = 'http://18.206.238.196:5050/articles/insert'
     y = requests.post(url, json=document)
     return y.status_code
 

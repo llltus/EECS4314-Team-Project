@@ -1,4 +1,6 @@
 /public/build/
+/code/debias_news_pipeline/myenv/
+/code/debias_news_pipeline/title_abstract_apis.json
 
 .DS_Store
 
