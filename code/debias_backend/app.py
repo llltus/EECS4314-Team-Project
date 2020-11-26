@@ -94,13 +94,15 @@ def timeout():
     app.logger.error('Timeout, server takes too long time to response, please retry!')
     return 'Timeout'
 
-def analyze(message):
-    if '404' in message:
+def analyze(message, path):
+    if '404' in message and path != '/favicon.ico':
         return 404
     elif 'timeout' in message.lower():
         return 'timeout'
     elif 'zero division' in message.lower():
         return 'zero division exception'
+    else:
+        return ''
 
 class logHandler(logging.Handler):
     def emit(self, record):
@@ -116,8 +118,10 @@ class logHandler(logging.Handler):
         level=record.__dict__['levelname']
         message=record.__dict__['msg']
         trace=trace
-       
-        insert_log(timestamp, level, ip, method, path, message, trace, analyze(message))
+        analysis = analyze(message, path)
+
+        if (not analysis):
+            insert_log(timestamp, level, ip, method, path, message, trace, analysis)
     
 if __name__ == '__main__':
     handler = logHandler()
