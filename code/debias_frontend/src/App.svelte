@@ -7,7 +7,7 @@
 
   //function to fetch REST API for processed articles
   const fetchArticles = async () => {
-    const response = await fetch("http://18.206.238.196/:5050/articles");
+    const response = await fetch("http://18.206.238.196:5050/articles");
 
     if (!response.ok) {
       throw `Error occured: ${response.status}`;
