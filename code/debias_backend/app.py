@@ -95,7 +95,7 @@ def timeout():
     return 'Timeout'
 
 def analyze(message, path):
-    if '404' in message and 'favicon.ico' in path:
+    if '404' in message and 'favicon.ico' not in path:
         return 404
     elif 'timeout' in message.lower():
         return 'timeout'
