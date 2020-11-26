@@ -120,7 +120,7 @@ class logHandler(logging.Handler):
         trace=trace
         analysis = analyze(message, path)
 
-        if (not analysis):
+        if (analysis):
             insert_log(timestamp, level, ip, method, path, message, trace, analysis)
     
 if __name__ == '__main__':
