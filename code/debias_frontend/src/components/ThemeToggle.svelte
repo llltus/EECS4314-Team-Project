@@ -33,13 +33,6 @@
 <style>
   .theme-switch-wrapper {
     text-align: right;
-    margin-right: 32px;
-    margin-bottom: 32px;
-  }
-
-  span {
-    margin-left: 16px;
-    font-size: 1rem;
   }
 
   .theme-switch {
@@ -97,5 +90,4 @@
     <input type="checkbox" id="checkbox" bind:this={toggleSwitch} />
     <div class="slider round" />
   </label>
-  <span>Enable dark mode ;)</span>
 </div>

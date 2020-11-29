@@ -39,6 +39,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    outline: none;
     margin: 0;
     padding: 0;
   }
