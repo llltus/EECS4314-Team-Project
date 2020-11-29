@@ -47,7 +47,6 @@
   <ul class="nav">
     <li class="navlink"><a href="/">Home</a></li>
     <li class="navlink"><a href="/logs">Logs</a></li>
-    <li class="navlink"><a href="/logs">Analysis (W.I.P.)</a></li>
     <li class="navlink">
       <ThemeToggle />
     </li>
