@@ -33,13 +33,13 @@
     padding: 0;
   }
   .navlink a {
-    color: #ccc;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 1.2em;
     padding: 24px;
   }
   .navlink a:hover {
-    background-color: var(--card-hover-color);
+    background-color: var(--chip-hover-color);
   }
 </style>
 
