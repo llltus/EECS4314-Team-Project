@@ -1,9 +1,7 @@
 <script>
-  import { each, is_empty } from "svelte/internal";
   import Article from "../components/Article.svelte";
   import SearchBar from "../components/SearchBar.svelte";
   import Chips from "../components/Chips.svelte";
-  import ThemeToggle from "../components/ThemeToggle.svelte";
 
   //function to fetch REST API for processed articles
   const fetchArticles = async () => {
@@ -41,7 +39,13 @@
     queriedArticles = [];
     allArticles.forEach((a) => {
       for (var i = 0; i < a.keywords.length; i++) {
-        if (a.keywords[i].toLowerCase().includes(event.detail.toLowerCase())) {
+        let query = event.detail.toLowerCase();
+        console.log(a.title.toLowerCase().includes(query));
+        if (
+          a.keywords[i].toLowerCase().includes(query) ||
+          a.title.toLowerCase().includes(query) ||
+          a.abstract.toLowerCase().includes(query)
+        ) {
           queriedArticles = [...queriedArticles, a];
           break;
         }
@@ -103,7 +107,7 @@
   }
 </style>
 
-<SearchBar on:testEmit={queryArticles} />
+<SearchBar on:emitSearchQuery={queryArticles} />
 <Chips {tones} bind:group={toneFilters} />
 {#if allArticles.length == 0}
   <div class="empty-list-card">- No news articles found -</div>

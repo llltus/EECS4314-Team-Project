@@ -1,17 +1,7 @@
 <script>
-  import router from "page";
-  import Home from "./pages/Home.svelte";
-  import Logs from "./pages/Logs.svelte";
-  import Navbar from "./components/Navbar.svelte";
-
-  let page;
-
-  router("/", () => (page = Home));
-  router("/logs", () => (page = Logs));
-
-  router.start();
+  import ThemeToggle from "./ThemeToggle.svelte";
 </script>
-<!-- 
+
 <style>
   header {
     background-color: var(--card-bg-color);
@@ -46,7 +36,7 @@
 
   .navlinktext {
     padding-top: 12px;
-      font-size: 16px;
+    font-size: 16px;
   }
 
   i {
@@ -83,9 +73,9 @@
       flex-grow: 1;
     }
   }
-</style> -->
+</style>
 
-<!-- <header>
+<header>
   <ul class="nav">
     <a class="navlink" href="/"><div class="navlinktext">
         <i class="material-icons">home</i>Home
@@ -97,6 +87,4 @@
       <ThemeToggle />
     </div>
   </ul>
-</header> -->
-<Navbar/>
-<svelte:component this={page} />
+</header>

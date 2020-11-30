@@ -38,16 +38,18 @@
 
 html {
   overflow-y: scroll;
+  margin: 0;
+  padding: 0;
 }
 
-html,
+
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
   position: relative;
   width: 100%;
-  max-width: 960px;
   margin: auto;
+  margin-top: 80px;
   text-align: center;
   font-family: Roboto;
   -webkit-text-size-adjust: 100%;
@@ -63,4 +65,12 @@ body {
 .material-icons {
   display: inline-flex;
   vertical-align: middle;
+}
+
+
+@media only screen and (max-device-width: 860px) and (-webkit-min-device-pixel-ratio: 1) {
+body {
+  margin-top: 2%;
+  margin-bottom: 64px;
+}
 }

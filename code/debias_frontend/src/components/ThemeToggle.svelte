@@ -33,7 +33,6 @@
 <style>
   .theme-switch-wrapper {
     text-align: right;
-    margin-left: 32px;
   }
 
   .theme-switch {

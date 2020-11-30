@@ -9,7 +9,7 @@
 
   function emitSearchQuery() {
     document.activeElement.blur();
-    dispatch("testEmit", searchQuery);
+    dispatch("emitSearchQuery", searchQuery);
   }
 </script>
 
@@ -18,7 +18,7 @@
     position: relative;
     margin: auto;
     width: 100%;
-    max-width: 80%;
+    max-width: 720px;
     border-radius: 3px;
     background-color: var(--card-bg-color);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.14);
