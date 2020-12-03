@@ -17,5 +17,8 @@
 - [Conceptual Architecture Slides](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/ConceptualArchitecturePresentation.pdf)
 - [Concrete Architecture](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/ConcreteArchitecture.pdf)
 - [Concrete Architecture Slides](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/ConcreteArchitecturePresentation.pdf)
+- [Concrete Architecture v0.2](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/AgileAlliance-A4-report.pdf)
+- [Concrete Architecture v0.2 Slides](https://github.com/viloil/EECS4314-Team-Project/blob/master/docs/A4_Presentation.pdf)
+
 ### Useful Links
 - [Asana for project management](https://app.asana.com/0/1192871833278825/list)
